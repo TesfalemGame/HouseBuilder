@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body style="background-color:black" onload="InitDemo();">
+    <div style="width:1024px;height:800px;background-color:blueviolet">
+        <canvas id="game-surface" width="1024" height="768">
+            Your browser does not support HTML5
+        </canvas>
+
+        <br />
+        <i>Demo is above this text</i>
+        <script src="newbox.js"></script>
+           
+        
+    </div>
+    <div id="box-controler" style="width:150px;height:160px;background-color:darkblue;position:fixed;right:156px;top:1px;color:aqua;text-align:center">
+        |     NEW MATERIAL     |
+        <label onclick="creat += 1; increas += 1;" style="background-color:cadetblue;font-size:20px;border:double;position:absolute;left:5px;top:20px;">| Floor |</label>
+        <label onclick="creat += 1; increas += 1;" style="background-color:cadetblue;font-size:20px;border:double;position:absolute;left:80px;top:20px;">| HCB |</label>
+    </div>
+    <div id="game-controler" style="width:150px;height:160px;background-color:darkblue;position:fixed;right:1px;top:1px;color:aqua;text-align:center">
+       |     CAMERA     |
+        <label onclick="ViewMatrixYrot += 0.1;" style="background-color:cadetblue;font-size:20px;border:dashed;position:absolute;right:2px;top:20px;">| ⤴ |</label>
+        <label onclick="ViewMatrixYrot -= 0.1;" style="background-color:cadetblue;font-size:20px;border:dashed;position:absolute;left:2px;top:20px;">| ⤵ |</label>      
+        <label onclick="ViewMatrixXmove -= 0.1;" style="background-color:cadetblue;font-size:25px;border:double;position:absolute;left:2px;top:60px;">| ⇦ |</label>
+        <label onclick="ViewMatrixXmove += 0.1;" style="background-color:cadetblue;font-size:25px;border:double;position:absolute;right:2px;top:60px;">| ⇨ |</label>
+        <label onclick="ViewMatrixZmove -= 0.1;" style="background-color:cadetblue;font-size:25px;border:double;position:absolute;left:53px;top:20px;">| ⇧ |</label>
+        <label onclick="ViewMatrixZmove += 0.1;" style="background-color:cadetblue;font-size:25px;border:double;position:absolute;left:53px;top:100px;">| ⇩ |</label>
+        <label onclick="ViewMatrixYmove -= 0.1;" style="background-color:cadetblue;font-size:25px;border:dashed;position:absolute;left:2px;top:100px;">| ⇩ |</label>
+        <label onclick="ViewMatrixYmove += 0.1;" style="background-color:cadetblue;font-size:25px;border:dashed;position:absolute;right:2px;top:100px;">| ⇧ |</label>
+        
+        <!--<label onclick="ViewMovSpeed -= 0.1;" style="background-color:cadetblue;font-size:12px;border:thin;position:absolute;left:63px;top:60px;">| ︽ |</label>
+        <label onclick="ViewMovSpeed += 0.1;" style="background-color:cadetblue;font-size:12px;border:thin;position:absolute;left:63px;top:78px;">| ︾ |</label>-->
+    </div>
+
+    <div id="material-mov" style="width:150px;height:160px;background-color:darkblue;position:fixed;right:1px;top:170px;color:aqua;text-align:center">
+        |     MAT-MOV     |
+        <label onclick="ViewMatrixYrot -= 0.1;" style="background-color:cadetblue;font-size:20px;border:dashed;position:absolute;right:2px;top:20px;">| ⤴ |</label>
+        <label onclick="ViewMatrixYrot += 0.1;" style="background-color:cadetblue;font-size:20px;border:dashed;position:absolute;left:2px;top:20px;">| ⤵ |</label>
+        <label onclick="buttenonclick = 3;" style="background-color:cadetblue;font-size:25px;border:double;position:absolute;left:2px;top:60px;">| ⇦ |</label>
+        <label onclick="buttenonclick = 2;" style="background-color:cadetblue;font-size:25px;border:double;position:absolute;right:2px;top:60px;">| ⇨ |</label>
+        <label onclick="buttenonclick = 7;" style="background-color:cadetblue;font-size:25px;border:double;position:absolute;left:53px;top:20px;">| ⇧ |</label>
+        <label onclick="buttenonclick = 6;" style="background-color:cadetblue;font-size:25px;border:double;position:absolute;left:53px;top:100px;">| ⇩ |</label>
+        <label onclick="buttenonclick = 5;" style="background-color:cadetblue;font-size:25px;border:dashed;position:absolute;left:2px;top:100px;">| ⇩ |</label>
+        <label onclick="buttenonclick = 4;" style="background-color:cadetblue;font-size:25px;border:dashed;position:absolute;right:2px;top:100px;">| ⇧ |</label>
+
+        <!--<label onclick="ViewMovSpeed -= 0.1;" style="background-color:cadetblue;font-size:12px;border:thin;position:absolute;left:63px;top:60px;">| ︽ |</label>
+        <label onclick="ViewMovSpeed += 0.1;" style="background-color:cadetblue;font-size:12px;border:thin;position:absolute;left:63px;top:78px;">| ︾ |</label>-->
+    </div>
+    </body>
+</html>
